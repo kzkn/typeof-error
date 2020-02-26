@@ -1,5 +1,5 @@
 import React from 'react'
-import { BootstrapTable } from 'react-bootstrap-table'
+import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
 
 function format(cell, row){
   return '<i class="glyphicon glyphicon-usd"></i> ' + cell;
@@ -24,11 +24,6 @@ export default function Table() {
       selectRow={selectRowProp}
       striped
       hover
-      condensed
-      pagination
-      insertRow
-      deleteRow
-      search
     >
       <TableHeaderColumn dataField="id" isKey dataAlign="right" dataSort>Product ID</TableHeaderColumn>
       <TableHeaderColumn dataField="name" dataSort>Product Name</TableHeaderColumn>
